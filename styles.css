@@ -45,6 +45,7 @@ a {
   padding: .8rem;
 }
 
+
 /* HEADER */
 
 .site-header {
@@ -115,6 +116,7 @@ a {
   border-radius: 999px;
   padding: .55rem .85rem;
 }
+
 
 /* HERO */
 
@@ -232,6 +234,7 @@ h3 {
   opacity: .85;
 }
 
+
 /* ALGEMENE SECTIES */
 
 .section {
@@ -280,6 +283,7 @@ h3 {
   margin-right: auto;
 }
 
+
 /* VOORDELEN */
 
 .cards {
@@ -304,6 +308,7 @@ h3 {
 .cards h3 {
   margin: 1.3rem 0 .75rem;
 }
+
 
 /* LESTIJDEN */
 
@@ -356,6 +361,7 @@ h3 {
   font-weight: 700;
 }
 
+
 /* GROTE TUSSENAFBEELDING */
 
 .image-break {
@@ -390,6 +396,7 @@ blockquote {
   max-width: 950px;
   padding: 2rem;
 }
+
 
 /* CONTACT */
 
@@ -432,6 +439,7 @@ blockquote {
   font-size: .9rem;
 }
 
+
 /* LOKALE SEO-SECTIE */
 
 .local {
@@ -450,6 +458,145 @@ blockquote {
 .local h2 {
   font-size: clamp(2rem, 4vw, 3.4rem);
 }
+
+
+/* VEELGESTELDE VRAGEN */
+
+.faq {
+  max-width: 100%;
+  background: var(--cream);
+  padding-top: clamp(4.5rem, 8vw, 7rem);
+  padding-bottom: clamp(5rem, 9vw, 8rem);
+}
+
+.faq > .eyebrow,
+.faq > h2,
+.faq-list {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq > h2 {
+  margin-bottom: 2.5rem;
+}
+
+.faq-list {
+  display: grid;
+  gap: .9rem;
+}
+
+.faq-list details {
+  background: var(--white);
+  border: 1px solid rgba(73, 96, 82, .14);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 22px rgba(28, 48, 37, .04);
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease,
+    transform .2s ease,
+    background-color .2s ease;
+}
+
+.faq-list details:hover {
+  border-color: rgba(73, 96, 82, .32);
+  box-shadow: 0 10px 30px rgba(28, 48, 37, .08);
+}
+
+.faq-list details[open] {
+  background: #f7f8f3;
+  border-color: rgba(73, 96, 82, .32);
+  box-shadow: 0 12px 34px rgba(28, 48, 37, .09);
+}
+
+.faq-list summary {
+  position: relative;
+  display: block;
+  padding: 1.4rem 4.5rem 1.4rem 1.6rem;
+  color: var(--green-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.18rem;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::marker {
+  content: "";
+}
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--sage);
+  color: var(--green-dark);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  line-height: 1;
+  transition:
+    transform .2s ease,
+    background-color .2s ease,
+    color .2s ease;
+}
+
+.faq-list details[open] summary::after {
+  content: "×";
+  background: var(--green);
+  color: var(--white);
+}
+
+.faq-list details[open] summary {
+  padding-bottom: 1.1rem;
+}
+
+.faq-list details p {
+  margin: 0 1.6rem;
+  padding: 1.2rem 0 1.55rem;
+  border-top: 1px solid rgba(73, 96, 82, .13);
+  color: #46564d;
+  line-height: 1.75;
+}
+
+.faq-list details strong {
+  color: var(--green-dark);
+}
+
+.faq-list details a {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color .2s ease;
+}
+
+.faq-list details a:hover {
+  color: var(--green-dark);
+}
+
+.faq-list summary:focus-visible,
+.faq-list details a:focus-visible {
+  outline: 3px solid rgba(73, 96, 82, .3);
+  outline-offset: 3px;
+  border-radius: 5px;
+}
+
 
 /* FOOTER */
 
@@ -473,6 +620,7 @@ footer a {
   opacity: .7;
   font-size: .85rem;
 }
+
 
 /* TABLET */
 
@@ -541,6 +689,7 @@ footer a {
   }
 }
 
+
 /* MOBIEL */
 
 @media (max-width: 560px) {
@@ -569,5 +718,32 @@ footer a {
     width: 100%;
     height: auto !important;
     object-fit: contain;
+  }
+
+  .faq {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .faq-list {
+    gap: .7rem;
+  }
+
+  .faq-list summary {
+    padding: 1.2rem 3.8rem 1.2rem 1.2rem;
+    font-size: 1.05rem;
+  }
+
+  .faq-list summary::after {
+    right: 1.1rem;
+    width: 29px;
+    height: 29px;
+    font-size: 1.3rem;
+  }
+
+  .faq-list details p {
+    margin: 0 1.2rem;
+    padding: 1rem 0 1.3rem;
+    line-height: 1.7;
   }
 }
