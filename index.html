@@ -3,63 +3,193 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yoga Brakel & Poederoijen | Yogaschool Balans</title>
+  <title>Yoga Brakel &amp; Poederoijen | Yogaschool Balans</title>
   <meta name="description" content="Toegankelijke yogalessen voor alle leeftijden in Brakel en Poederoijen. Iedere woensdag en vrijdag. Hatha Yoga, Kundalini, Tai Chi, mindfulness en ademhaling. Gratis proefles, zonder abonnement.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#496052">
   <link rel="canonical" href="https://yogaschoolbalans.nl/">
   <link rel="stylesheet" href="styles.css">
-  <meta property="og:title" content="Yogaschool Balans | Brakel & Poederoijen">
+
+  <meta property="og:title" content="Yogaschool Balans | Brakel &amp; Poederoijen">
   <meta property="og:description" content="Yoga voor alle leeftijden in de Bommelerwaard. Probeer gratis een les, zonder abonnement of lidmaatschap.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yogaschoolbalans.nl/">
   <meta property="og:image" content="https://yogaschoolbalans.nl/assets/hero-yoga.webp">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SportsActivityLocation",
-    "name": "Yogaschool Balans",
-    "description": "Toegankelijke yogalessen voor alle leeftijden in Brakel en Poederoijen, met Hatha Yoga, Kundalini, Tai Chi, mindfulness en ademhalingstechnieken.",
-    "foundingDate": "2012",
-    "areaServed": ["Brakel", "Poederoijen", "Zaltbommel", "Giessen", "Bommelerwaard"],
-    "email": "mailto:meulman@gmail.com",
-    "telephone": "+31611352082",
-    "url": "https://yogaschoolbalans.nl/",
-    "location": [
-      {"@type":"Place","name":"Sporthal Brakel","address":{"@type":"PostalAddress","streetAddress":"Burg. Posweg 46","postalCode":"5306 GE","addressLocality":"Brakel","addressCountry":"NL"}},
-      {"@type":"Place","name":"Dorpshuis Podarwic","address":{"@type":"PostalAddress","streetAddress":"Burg. Posweg 1","postalCode":"5307 HA","addressLocality":"Poederoijen","addressCountry":"NL"}}
+    "@graph": [
+      {
+        "@type": "SportsActivityLocation",
+        "@id": "https://yogaschoolbalans.nl/#organisatie",
+        "name": "Yogaschool Balans",
+        "description": "Toegankelijke yogalessen voor alle leeftijden in Brakel en Poederoijen, met Hatha Yoga, Kundalini, Tai Chi, mindfulness en ademhalingstechnieken.",
+        "foundingDate": "2012",
+        "areaServed": ["Brakel", "Poederoijen", "Zaltbommel", "Giessen", "Bommelerwaard"],
+        "email": "mailto:meulman@gmail.com",
+        "telephone": "+31611352082",
+        "url": "https://yogaschoolbalans.nl/",
+        "employee": {
+          "@type": "Person",
+          "name": "Wieneke Meulman",
+          "jobTitle": "Yogadocent"
+        },
+        "location": [
+          {
+            "@type": "Place",
+            "name": "Sporthal Brakel",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Burg. Posweg 46",
+              "postalCode": "5306 GE",
+              "addressLocality": "Brakel",
+              "addressCountry": "NL"
+            }
+          },
+          {
+            "@type": "Place",
+            "name": "Dorpshuis Podarwic",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Burg. Posweg 1",
+              "postalCode": "5307 HA",
+              "addressLocality": "Poederoijen",
+              "addressCountry": "NL"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://yogaschoolbalans.nl/#veelgestelde-vragen",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Ik heb nog geen ervaring met yoga. Kan ik dan toch meedoen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jazeker. Je hebt geen yoga-ervaring nodig om mee te doen. De oefeningen worden rustig uitgelegd en je doet mee op je eigen niveau en binnen je eigen mogelijkheden."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Waar worden de yogalessen gegeven?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yogaschool Balans geeft yogalessen in Sporthal Brakel aan Burg. Posweg 46 in Brakel en in Dorpshuis Podarwic aan Burg. Posweg 1 in Poederoijen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan ik eerst een proefles volgen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Neem voor je eerste bezoek contact op voor een gratis proefles. Dat kan via WhatsApp of telefonisch via 06 11352082."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wat moet ik meenemen naar een yogales?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Neem een handdoek van ongeveer je eigen lichaamslengte mee. Heb je zelf geen yogamat, dan is er een yogamat voor je beschikbaar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Welke vorm van yoga wordt gegeven?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "De les is iedere week anders en combineert elementen uit Hatha Yoga, Kundalini en Tai Chi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Op welke dagen en tijden zijn de yogalessen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In Brakel is de yogales op woensdag van 19.30 tot 20.30 uur. In Poederoijen is de yogales op vrijdag van 18.30 tot 19.30 uur."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hoe kan ik mij aanmelden voor een yogales?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Je kunt je aanmelden door te bellen of een WhatsApp-bericht te sturen naar 06 11352082."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Waar is de yogales in Brakel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "De yogales in Brakel wordt gegeven in Sporthal Brakel, Burg. Posweg 46, 5306 GE Brakel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Waar is de yogales in Poederoijen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "De yogales in Poederoijen wordt gegeven in Dorpshuis Podarwic, Burg. Posweg 1, 5307 HA Poederoijen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Door wie wordt de yogales gegeven?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "De yogalessen worden gegeven door yogadocent Wieneke Meulman."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>
 </head>
+
 <body>
   <a class="skip-link" href="#inhoud">Ga naar de inhoud</a>
+
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Yogaschool Balans, naar boven">
       <span class="brand-mark" aria-hidden="true">○</span>
-      <span><strong>Yogaschool Balans</strong><small>Yoga in de Bommelerwaard</small></span>
+      <span>
+        <strong>Yogaschool Balans</strong>
+        <small>Yoga in de Bommelerwaard</small>
+      </span>
     </a>
+
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+
     <nav id="nav" aria-label="Hoofdnavigatie">
       <a href="#over">Over de lessen</a>
       <a href="#rooster">Lestijden</a>
       <a href="#locaties">Locaties</a>
+      <a href="#faq">Veelgestelde vragen</a>
       <a class="nav-cta" href="#proefles">Gratis proefles</a>
     </nav>
   </header>
 
   <main id="inhoud">
+
     <section class="hero" id="top">
       <img src="assets/hero-yoga.webp" alt="Toegankelijke yogales met oefeningen op verschillende niveaus" width="1536" height="1024" fetchpriority="high">
       <div class="hero-shade"></div>
+
       <div class="hero-content">
         <p class="eyebrow">Yoga in Brakel en Poederoijen</p>
         <h1>Vind rust, ruimte en balans</h1>
         <p>Wekelijkse yogalessen voor alle leeftijden en ieder niveau. Je hoeft niet lenig of ervaren te zijn. Je bent welkom zoals je bent.</p>
+
         <div class="button-row">
           <a class="button primary" href="https://wa.me/31611352082?text=Hallo%2C%20ik%20wil%20graag%20een%20gratis%20proefles%20yoga%20aanvragen" target="_blank" rel="noopener">Vraag proefles aan via WhatsApp</a>
           <a class="button secondary" href="#rooster">Bekijk de lestijden</a>
         </div>
+
         <p class="hero-note">Gratis proefles · Geen abonnement of lidmaatschap nodig</p>
       </div>
     </section>
@@ -68,20 +198,39 @@
       <div>
         <p class="eyebrow dark">Yogaschool sinds 2012</p>
         <h2>Yoga die bij jou past</h2>
+
         <p class="lead">Yogaschool Balans biedt toegankelijke lessen in Brakel en Poederoijen, midden in de Bommelerwaard.</p>
+
         <p>In iedere les is er aandacht voor houding, mindfulness en ademhalingstechnieken. De les is iedere week anders en combineert elementen uit <strong>Hatha Yoga, Kundalini en Tai Chi</strong>.</p>
+
         <p>De oefeningen helpen je bewuster te bewegen en tijd te nemen voor ontspanning. Je doet mee binnen je eigen mogelijkheden. Daardoor zijn de lessen geschikt voor alle leeftijden, zowel voor beginners als voor mensen met yoga-ervaring.</p>
       </div>
+
       <img class="rounded-image" src="assets/yoga-voor-iedereen.webp" alt="Rustige yogaoefeningen op matten en stoelen, geschikt voor verschillende leeftijden" width="1536" height="1024" loading="lazy">
     </section>
 
     <section class="benefits section narrow" aria-labelledby="waarom">
       <p class="eyebrow dark centered">Laagdrempelig en persoonlijk</p>
       <h2 id="waarom" class="centered">Iedereen kan meedoen</h2>
+
       <div class="cards">
-        <article><span aria-hidden="true">01</span><h3>Op jouw niveau</h3><p>Je hoeft niet lenig te zijn. Beweeg met aandacht voor je eigen lichaam en mogelijkheden.</p></article>
-        <article><span aria-hidden="true">02</span><h3>Iedere week anders</h3><p>Een afwisselende combinatie van yogahoudingen, ademhaling, mindfulness en Tai Chi.</p></article>
-        <article><span aria-hidden="true">03</span><h3>Zonder verplichtingen</h3><p>Je hoeft geen abonnement of lidmaatschap af te sluiten. Begin met een gratis proefles.</p></article>
+        <article>
+          <span aria-hidden="true">01</span>
+          <h3>Op jouw niveau</h3>
+          <p>Je hoeft niet lenig te zijn. Beweeg met aandacht voor je eigen lichaam en mogelijkheden.</p>
+        </article>
+
+        <article>
+          <span aria-hidden="true">02</span>
+          <h3>Iedere week anders</h3>
+          <p>Een afwisselende combinatie van yogahoudingen, ademhaling, mindfulness en Tai Chi.</p>
+        </article>
+
+        <article>
+          <span aria-hidden="true">03</span>
+          <h3>Zonder verplichtingen</h3>
+          <p>Je hoeft geen abonnement of lidmaatschap af te sluiten. Begin met een gratis proefles.</p>
+        </article>
       </div>
     </section>
 
@@ -91,19 +240,31 @@
         <h2>Kies de locatie die bij jou past</h2>
         <p>De lessen vinden iedere woensdag en vrijdag plaats. Neem voor je eerste bezoek even contact op voor een gratis proefles.</p>
       </div>
+
       <div class="schedule-grid" id="locaties">
         <article class="lesson-card">
           <p class="day">Woensdag</p>
           <p class="time">19.30 – 20.30 uur</p>
           <h3>Sporthal Brakel</h3>
-          <address>Burg. Posweg 46<br>5306 GE Brakel</address>
-         <a href="https://maps.app.goo.gl/AJXSSoXFPfwz2L1n6" target="_blank" rel="noopener">Bekijk locatie op Google Maps →</a>
+
+          <address>
+            Burg. Posweg 46<br>
+            5306 GE Brakel
+          </address>
+
+          <a href="https://maps.app.goo.gl/AJXSSoXFPfwz2L1n6" target="_blank" rel="noopener">Bekijk locatie op Google Maps →</a>
         </article>
+
         <article class="lesson-card accent">
           <p class="day">Vrijdag</p>
           <p class="time">18.30 – 19.30 uur</p>
           <h3>Dorpshuis Podarwic</h3>
-          <address>Burg. Posweg 1<br>5307 HA Poederoijen</address>
+
+          <address>
+            Burg. Posweg 1<br>
+            5307 HA Poederoijen
+          </address>
+
           <a href="https://maps.app.goo.gl/TtPij7kr72HPasWP7" target="_blank" rel="noopener">Bekijk locatie op Google Maps →</a>
         </article>
       </div>
@@ -111,32 +272,134 @@
 
     <section class="image-break">
       <img src="assets/yoga-balans.webp" alt="Ontspannen yoga en rustige beweging in een warme lesruimte" width="1536" height="1024" loading="lazy">
+
       <blockquote>“Niet presteren, maar met aandacht bewegen en ontdekken wat jouw lichaam nodig heeft.”</blockquote>
+    </section>
+
+    <section class="section narrow faq" id="faq" aria-labelledby="faq-title">
+      <p class="eyebrow dark centered">Praktische informatie</p>
+      <h2 id="faq-title" class="centered">Veelgestelde vragen</h2>
+
+      <div class="faq-list">
+
+        <details>
+          <summary>Ik heb nog geen ervaring met yoga. Kan ik dan toch meedoen?</summary>
+          <p>Jazeker. Je hebt geen yoga-ervaring nodig om mee te doen. De oefeningen worden rustig uitgelegd en je doet mee op je eigen niveau en binnen je eigen mogelijkheden.</p>
+        </details>
+
+        <details>
+          <summary>Waar worden de yogalessen gegeven?</summary>
+          <p>Yogaschool Balans geeft yogalessen in <strong>Sporthal Brakel</strong>, Burg. Posweg 46 in Brakel, en in <strong>Dorpshuis Podarwic</strong>, Burg. Posweg 1 in Poederoijen.</p>
+        </details>
+
+        <details>
+          <summary>Kan ik eerst een proefles volgen?</summary>
+          <p>Ja. Neem voor je eerste bezoek contact op voor een <strong>gratis proefles</strong>. Dat kan via WhatsApp of telefonisch via <a href="tel:+31611352082">06 11 35 20 82</a>.</p>
+        </details>
+
+        <details>
+          <summary>Wat moet ik meenemen naar een yogales?</summary>
+          <p>Neem een handdoek van ongeveer je eigen lichaamslengte mee. Heb je zelf geen yogamat? Geen probleem, er is een yogamat voor je beschikbaar.</p>
+        </details>
+
+        <details>
+          <summary>Welke vorm van yoga wordt gegeven?</summary>
+          <p>De les is iedere week anders en combineert elementen uit <strong>Hatha Yoga, Kundalini en Tai Chi</strong>.</p>
+        </details>
+
+        <details>
+          <summary>Op welke dagen en tijden zijn de yogalessen?</summary>
+          <p>In Brakel is de yogales op woensdag van 19.30 tot 20.30 uur. In Poederoijen is de yogales op vrijdag van 18.30 tot 19.30 uur.</p>
+        </details>
+
+        <details>
+          <summary>Hoe kan ik mij aanmelden voor een yogales?</summary>
+          <p>Je kunt je aanmelden door te bellen of een WhatsApp-bericht te sturen naar <a href="tel:+31611352082">06 11 35 20 82</a>.</p>
+        </details>
+
+        <details>
+          <summary>Waar is de yogales in Brakel?</summary>
+          <p>De yogales in Brakel wordt gegeven in <strong>Sporthal Brakel, Burg. Posweg 46, 5306 GE Brakel</strong>.</p>
+        </details>
+
+        <details>
+          <summary>Waar is de yogales in Poederoijen?</summary>
+          <p>De yogales in Poederoijen wordt gegeven in <strong>Dorpshuis Podarwic, Burg. Posweg 1, 5307 HA Poederoijen</strong>.</p>
+        </details>
+
+        <details>
+          <summary>Door wie wordt de yogales gegeven?</summary>
+          <p>De yogalessen worden gegeven door yogadocent <strong>Wieneke Meulman</strong>.</p>
+        </details>
+
+      </div>
     </section>
 
     <section class="trial section narrow" id="proefles">
       <p class="eyebrow dark centered">Vrijblijvend kennismaken</p>
       <h2 class="centered">Kom langs voor een gratis proefles</h2>
+
       <p class="lead centered">Ontdek rustig of de lessen bij je passen. Je hoeft geen abonnement of lidmaatschap af te sluiten.</p>
+
       <div class="contact-options">
-        <a class="contact-card" href="https://wa.me/31611352082?text=Hallo%2C%20ik%20wil%20graag%20een%20gratis%20proefles%20yoga%20aanvragen" target="_blank" rel="noopener"><strong>WhatsApp</strong><span>Stuur direct een bericht</span><b>06 11 35 20 82 →</b></a>
-        <a class="contact-card" href="mailto:meulman@gmail.com?subject=Aanvraag%20gratis%20proefles%20yoga"><strong>E-mail</strong><span>Vraag je proefles per mail aan</span><b>meulman@gmail.com →</b></a>
-        <a class="contact-card" href="tel:+31611352082"><strong>Bellen</strong><span>Neem telefonisch contact op</span><b>06 11 35 20 82 →</b></a>
+
+        <a class="contact-card" href="https://wa.me/31611352082?text=Hallo%2C%20ik%20wil%20graag%20een%20gratis%20proefles%20yoga%20aanvragen" target="_blank" rel="noopener">
+          <strong>WhatsApp</strong>
+          <span>Stuur direct een bericht</span>
+          <b>06 11 35 20 82 →</b>
+        </a>
+
+        <a class="contact-card" href="mailto:meulman@gmail.com?subject=Aanvraag%20gratis%20proefles%20yoga">
+          <strong>E-mail</strong>
+          <span>Vraag je proefles per mail aan</span>
+          <b>meulman@gmail.com →</b>
+        </a>
+
+        <a class="contact-card" href="tel:+31611352082">
+          <strong>Bellen</strong>
+          <span>Neem telefonisch contact op</span>
+          <b>06 11 35 20 82 →</b>
+        </a>
+
       </div>
     </section>
 
     <section class="local section">
-      <div><h2>Yoga in de Bommelerwaard</h2><p>De lessen zijn goed bereikbaar voor deelnemers uit Brakel, Poederoijen, Zaltbommel, Giessen en omliggende dorpen in de Bommelerwaard. Kies op woensdag voor Brakel of op vrijdag voor Poederoijen.</p></div>
+      <div>
+        <h2>Yoga in de Bommelerwaard</h2>
+        <p>De lessen zijn goed bereikbaar voor deelnemers uit Brakel, Poederoijen, Zaltbommel, Giessen en omliggende dorpen in de Bommelerwaard. Kies op woensdag voor Brakel of op vrijdag voor Poederoijen.</p>
+      </div>
+
       <a class="button primary" href="mailto:meulman@gmail.com?subject=Aanvraag%20gratis%20proefles%20yoga">Gratis proefles aanvragen</a>
     </section>
+
   </main>
 
   <footer>
-    <div><strong>Yogaschool Balans</strong><p>Yoga in Brakel en Poederoijen sinds 2012.</p></div>
-    <div><strong>Contact</strong><p><a href="tel:+31611352082">06 11 35 20 82</a><br><a href="mailto:meulman@gmail.com">meulman@gmail.com</a></p></div>
-    <div><strong>Lessen</strong><p>Woensdag in Brakel<br>Vrijdag in Poederoijen</p></div>
+    <div>
+      <strong>Yogaschool Balans</strong>
+      <p>Yoga in Brakel en Poederoijen sinds 2012.</p>
+    </div>
+
+    <div>
+      <strong>Contact</strong>
+      <p>
+        <a href="tel:+31611352082">06 11 35 20 82</a><br>
+        <a href="mailto:meulman@gmail.com">meulman@gmail.com</a>
+      </p>
+    </div>
+
+    <div>
+      <strong>Lessen</strong>
+      <p>
+        Woensdag in Brakel<br>
+        Vrijdag in Poederoijen
+      </p>
+    </div>
+
     <p class="copyright">© <span id="year"></span> Yogaschool Balans</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
